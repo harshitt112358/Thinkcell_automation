@@ -2,20 +2,15 @@ import streamlit as st
 import tempfile
 from pathlib import Path
 
-st.set_page_config(page_title="think-cell Updater (22 charts)", page_icon="📊", layout="centered")
-st.title("📊 think-cell — Update 22 charts (download a new PPT)")
+st.set_page_config(page_title="think-cell Updation app", page_icon="📊", layout="centered")
+st.title("📊 Update your thinkcell charts (download a new PPT)")
 
 st.markdown(
     """
-Upload your PowerPoint and Excel. The app updates **multiple think-cell elements** **in place**  
-using fixed Excel ranges, then gives you a **downloadable updated copy**.
-
-**Requirements**
-- Windows + local **Microsoft Office (Excel + PowerPoint)** + **think-cell**
-- Python package: `pywin32`
-- Uses think-cell API: `UpdateChart(presentation, name, range, transposed)`
-- Updating **breaks the live Excel link** for each updated element (think-cell behavior)
-"""
+Steps:
+1) Upload your Base PowerPoint template and Master Excel.
+2) Click on "Update all & get download button"
+3) Download the updated file
 )
 
 # ===================== ONE-TIME CONFIG — EDIT JUST THIS ===========================
@@ -196,3 +191,4 @@ if run:
             pythoncom.CoUninitialize()
         except Exception:
             pass
+
