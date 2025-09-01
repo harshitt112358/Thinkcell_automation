@@ -8,7 +8,8 @@ st.title("📊 Update your thinkcell charts (download a new PPT)")
 st.markdown(
     """
 Steps:
-1) Upload your Base PowerPoint template and Master Excel.
+1) Upload your Base PowerPoint template and Master Excel
+2) Enter the output PPT file name
 2) Click on "Update all & get download button"
 3) Download the updated file
 """
@@ -192,5 +193,6 @@ if run:
             pythoncom.CoUninitialize()
         except Exception:
             pass
+
 
 
