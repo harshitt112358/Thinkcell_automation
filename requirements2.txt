@@ -1,5 +1,6 @@
-streamlit
-pywin32
-pandas
-openpyxl
+streamlit>=1.35
+pywin32>=306
+pandas>=2.0
+openpyxl>=3.1
+
 
